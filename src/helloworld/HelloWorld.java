@@ -6,16 +6,21 @@
 package helloworld;
 
 /**
- *
- * @author bmittenzwey
+ * This class demonstrates how to implement a basic HelloWorld class 
+ * @author bill mittenzwey
  */
 public class HelloWorld {
 
     /**
+     * The entry point method for this class
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        System.out.print("Hello World!\n");
+    public static void main(String[] args) 
+    {
+        if (args.length> 0 && args[0] instanceof String)
+            System.out.println(args[0]);
+        else
+            System.out.println("Hello Default World!");
     }
     
 }
